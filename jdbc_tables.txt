@@ -1,0 +1,70 @@
+
+************Customer table****************
+
+CREATE TABLE CUSTOMER(
+customerId number(10) primary key,
+customerName varchar2(30),
+customerAge number(5),
+customerGender varchar2(10),
+customerPhone varchar2(10),
+customerAddress varchar2(40)
+);
+
+
+
+
+
+
+
+************customer sequence*************
+
+create sequence customerId_sequence;
+
+
+
+
+
+
+
+************Wallet table****************
+
+create table Wallet(
+accno number(10),
+type varchar2(30),
+balance decimal(10,3)
+);
+
+
+
+
+
+
+***********wallet sequence***************
+
+create sequence accno_sequence;
+
+
+
+
+
+
+**************Transaction table**************
+
+create table Transactions(
+transactionId number(10),
+faccno number(5),
+taccno number(5),
+type varchar2(10),
+amount number(10,3),
+balance number(10,3)
+);
+
+
+
+
+
+
+
+***************Transaction sequence****************
+
+create sequence transactionId_sequence;
